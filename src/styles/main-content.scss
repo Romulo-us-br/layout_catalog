@@ -1,0 +1,30 @@
+.main__content {
+  --column-count: 1;
+
+  display: grid;
+  padding: 50px 40px;
+  gap: 48px 46px;
+  grid-template-columns: repeat(var(--column-count), 200px);
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 488px) {
+  .main__content {
+    --column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__content {
+    --column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__content {
+    --column-count: 4;
+  }
+}
+
+// - cards have fixed width - `200px`
