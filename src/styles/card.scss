@@ -10,11 +10,14 @@
   transition: transform $transition-speed ease-in-out;
   cursor: pointer;
   position: relative;
+   font-family: Roboto, sans-serif;
 
   // 1. Aumentar o card em 20% sem afetar vizinhos
-  &:hover {
+   &:hover {
     transform: scale(1.2);
-    z-index: 10; // Garante que o card aumentado fique por cima dos outros
+    .card__title {
+      color: $color-title-hover;
+    }
   }
 
   &__img-img {
@@ -32,10 +35,7 @@
     line-height: 18px;
     margin: 40px auto 4px;
     transition: color $transition-speed;
-
-    .card:hover & {
-      color: $color-title-hover;
-    }
+    text-decoration: none;
   }
 
   &__price-title {
@@ -88,7 +88,7 @@
 
   &__button-buy {
     font-family: Roboto, sans-serif;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -103,11 +103,14 @@
     text-transform: uppercase;
     background-color: $color-primary;
     min-width: 166px;
+    transition:
+      background-color $transition-speed,
+      color $transition-speed;
 
     &:hover {
-      border: 1px solid $color-primary;
       color: $color-primary;
       background-color: $color-white;
     }
   }
-}
+
+ }
