@@ -15,7 +15,7 @@
   // 1. Aumentar o card em 20% sem afetar vizinhos
    &:hover {
     transform: scale(1.2);
-    &__title {
+    .card__title {
       color: $color-title-hover;
     }
   }
