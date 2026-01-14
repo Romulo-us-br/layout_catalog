@@ -79,21 +79,6 @@ body {
   position: relative;
 }
 
-.card:hover {
-  transform: scale(1.2);
-}
-
-.card:hover__title {
-  color: #34568b;
-}
-
-.card__img-img {
-  width: 160px;
-  height: 134px;
-  margin: 0 auto;
-  display: block;
-}
-
 .card__title {
   color: #060b35;
   height: 36px;
@@ -103,6 +88,21 @@ body {
   line-height: 18px;
   text-decoration: none;
   transition: color .3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card__title {
+  color: #34568b;
+}
+
+.card__img-img {
+  width: 160px;
+  height: 134px;
+  margin: 0 auto;
+  display: block;
 }
 
 .card__price-title {
