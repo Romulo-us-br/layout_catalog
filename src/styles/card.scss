@@ -10,9 +10,9 @@
   transition: transform $transition-speed ease-in-out;
   cursor: pointer;
   position: relative;
-   font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 
-     &__title {
+  &__title {
     font-weight: 500;
     font-size: 12px;
     height: 36px;
@@ -22,9 +22,9 @@
     transition: color $transition-speed;
     text-decoration: none;
   }
-  
+
   // 1. Aumentar o card em 20% sem afetar vizinhos
-   &:hover {
+  &:hover {
     transform: scale(1.2);
     .card__title {
       color: $color-title-hover;
@@ -37,8 +37,6 @@
     display: block;
     margin: 0 auto;
   }
-
-
 
   &__price-title {
     font-weight: 400;
@@ -114,5 +112,4 @@
       background-color: $color-white;
     }
   }
-
- }
+}

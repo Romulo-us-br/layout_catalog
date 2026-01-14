@@ -2,13 +2,13 @@
   "name": "catalog-page",
   "version": "1.0.0",
   "description": "Frontend practice with catalog page",
- "scripts": {
+  "scripts": {
     "init": "mate-scripts init",
     "start": "parcel src/index.html",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ && xcopy backstop_data\\html_report dist\\report /E /I /Y && xcopy backstop_data\\bitmaps_reference dist\\bitmaps_reference /E /I /Y && xcopy backstop_data\\bitmaps_test dist\\bitmaps_test /E /I /Y",
     "deploy": "gh-pages -d dist",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
