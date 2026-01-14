@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "Frontend practice with catalog page",
  "scripts": {
+    "init": "mate-scripts init",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
-    "mate:start": "mate-scripts start",
-    "mate:build": "mate-scripts build",
-    "mate:deploy": "mate-scripts deploy",
-    "test": "npm run lint && mate-scripts test"
+    "test:only": "mate-scripts test",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "update": "mate-scripts update",
+    "postinstall": "npm run update",
+    "test": "npm run lint && npm run test:only"
   },
   "keywords": [],
   "author": "Mate Academy",

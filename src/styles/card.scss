@@ -12,6 +12,17 @@
   position: relative;
    font-family: Roboto, sans-serif;
 
+     &__title {
+    font-weight: 500;
+    font-size: 12px;
+    height: 36px;
+    color: #060b35;
+    line-height: 18px;
+    margin: 40px auto 4px;
+    transition: color $transition-speed;
+    text-decoration: none;
+  }
+  
   // 1. Aumentar o card em 20% sem afetar vizinhos
    &:hover {
     transform: scale(1.2);
@@ -27,16 +38,7 @@
     margin: 0 auto;
   }
 
-  &__title {
-    font-weight: 500;
-    font-size: 12px;
-    height: 36px;
-    color: #060b35;
-    line-height: 18px;
-    margin: 40px auto 4px;
-    transition: color $transition-speed;
-    text-decoration: none;
-  }
+
 
   &__price-title {
     font-weight: 400;
