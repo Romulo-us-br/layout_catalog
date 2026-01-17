@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
@@ -16,7 +15,7 @@
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: $dist-list;
   margin: 0;
   padding: 0;
 }
@@ -30,7 +29,7 @@
   line-height: 1;
 
   font-size: 12px;
-  font-weight: 500;
+  font-weight: $font-weight-500;
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;

@@ -6,7 +6,7 @@
   gap: 46px 48px;
   grid-auto-flow: row;
   align-items: center;
-  grid-template-columns: repeat(var(--column-count), 200px);
+  grid-template-columns: repeat(var(--column-count), $card-width);
   justify-content: center;
 }
 

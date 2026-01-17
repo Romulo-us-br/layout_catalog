@@ -1,22 +1,22 @@
 .card {
-  width: 200px;
+  width: $card-width;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   background-color: $color-white;
   padding: 32px 16px 16px;
-  border-radius: 5px;
-  border: 1px solid #f3f3f3;
+  border-radius: $border-radius-small;
+  border: 1px solid $color-border-w;
   transition: transform $transition-speed ease-in-out;
   cursor: pointer;
   position: relative;
   font-family: Roboto, sans-serif;
 
   &__title {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: $font-weight-500;
+    font-size: $font-12;
     height: 36px;
-    color: #060b35;
+    color: $link-color;
     line-height: 18px;
     margin: 40px auto 4px;
     transition: color $transition-speed;
@@ -39,15 +39,15 @@
   }
 
   &__price-title {
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: $font-weight-400;
+    font-size: $font-12;
     color: $color-gray;
   }
 
   &__code {
-    font-size: 10px;
+    font-size: $font-10;
     color: $color-gray;
-    font-weight: 400;
+    font-weight: $font-weight-400;
     width: 98px;
     line-height: 14px;
     margin-bottom: 16px;
@@ -61,15 +61,15 @@
   }
 
   &__review-number {
-    font-size: 10px;
-    font-weight: 400;
+    font-size: $font-10;
+    font-weight: $font-weight-400;
     line-height: 14px;
     align-items: flex-end;
   }
 
   &__price-value {
     color: #060b35;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 
   /* card price */
@@ -82,7 +82,7 @@
     justify-content: space-between;
     margin-bottom: 16px;
     color: $color-gray;
-    font-size: 16px;
+    font-size: $font-16;
     font-weight: bold;
   }
 
@@ -93,12 +93,12 @@
     align-items: center;
     box-sizing: border-box;
     height: 40px;
-    border: 1px solid #00acdc;
-    border-radius: 5px;
-    font-size: 14px;
+    border: 1px solid $color-primary;
+    border-radius: $border-radius-small;
+    font-size: $font-14;
     line-height: 16px;
     color: $color-white;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     text-decoration: none;
     text-transform: uppercase;
     background-color: $color-primary;
